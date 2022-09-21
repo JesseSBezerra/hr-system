@@ -6,11 +6,13 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 import java.util.List;
 
 @RequiredArgsConstructor
 @SpringBootApplication
+@EnableEurekaClient
 public class UserApiApplication implements CommandLineRunner {
 
     private final UserRepository userRepository;
